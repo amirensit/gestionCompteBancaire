@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="utf-8"/>
+<title>MaBanque</title>
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+ integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+crossorigin="anonymous"
+th:hreaf="@{https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css}"/>
+
+<link rel="stylesheet" type="text/css" href="../static/css/myStyle.css" 
+th:href="@{/css/myStyle.css}"/>
+
+
+
+
+</head>
+<body>
+		<header>	
+		
+			<div class="navbar navbar-inverse" >
+				<div class="container-fluid">
+					<ul class="nav navbar-nav">
+						<li>	<a th:href="@{/operation}">operations	</a>	</li>
+						<li>	<a th:href="@{/comptes}">comptes	</a>		</li>
+						<li>	<a th:href="@{/clients}">operations	</a>	</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>	<a th:href="@{/login?logout}">logout	</a>	</li>
+						<!--  @{/login?logout} permet de se déconnecter en SPRING -->
+					</ul>
+				
+				</div>
+			</div>
+		</header>
+		
+		
+		
+		<section layout:fragment="content">	</section>
+		
+	
+		
+		<footer>
+			<div class="navbar-fixed-bottom" >
+				<small>l'addresse</small>
+			</div>	
+		</footer>
+		
+		
+
+</body>
+</html>

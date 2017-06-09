@@ -60,6 +60,7 @@ import com.ensit.metier.IBanqueMetier;
 
 		@Override
 		public void run(String... arg0) throws Exception {
+			
 			Client c1= clientRepository.save( new Client("hassen","hassen@gmail.com") );
 			Client c2= clientRepository.save( new Client("rachid","rachid@gmail.com") );
 			
@@ -76,6 +77,7 @@ import com.ensit.metier.IBanqueMetier;
 			
 			
 			banqueMetier.verser("cp1", 1111111);
+			
 		
 		}
 	
